@@ -377,7 +377,7 @@ div.rendered_html tbody tr:hover {
     text-align: unset;
 }
 </style>
-<p><img alt="0874249c38814e2e857510ad74ba0e94" src="http://developer.download.nvidia.com/compute/machine-learning/frameworks/nvidia_logo.png" /></p>
+<p><img alt="b8c06e6f45914204a839b3793091d4ce" src="http://developer.download.nvidia.com/compute/machine-learning/frameworks/nvidia_logo.png" /></p>
 <div class="section" id="HugeCTR-Continuous-Training">
 <h1>HugeCTR Continuous Training<a class="headerlink" href="#HugeCTR-Continuous-Training" title="Permalink to this headline"></a></h1>
 <div class="section" id="Overview">
@@ -408,7 +408,7 @@ div.rendered_html tbody tr:hover {
 <h3>1.1 Get HugeCTR from NGC<a class="headerlink" href="#1.1-Get-HugeCTR-from-NGC" title="Permalink to this headline"></a></h3>
 <p>The continuous training module is preinstalled in the <a class="reference external" href="https://ngc.nvidia.com/catalog/containers/nvidia:merlin:merlin-training">Merlin Training Container</a>: <code class="docutils literal notranslate"><span class="pre">nvcr.io/nvidia/merlin/merlin-training:22.04</span></code>.</p>
 <p>You can check the existence of required libraries by running the following Python code after launching this container.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ python3 -c <span class="s2">&quot;import hugectr&quot;</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>python3<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;import hugectr&quot;</span>
 </pre></div>
 </div>
 </div>
@@ -420,7 +420,7 @@ div.rendered_html tbody tr:hover {
 <p>To preprocess the downloaded Kaggle Criteo dataset, we’ll make the following operations: * Reduce the amounts of data to speed up the preprocessing * Fill missing values * Remove the feature values whose occurrences are very rare, etc.</p>
 <ol class="arabic" start="2">
 <li><p>Preprocessing by Pandas using the following command:</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ bash preprocess.sh <span class="m">1</span> wdl_data pandas <span class="m">1</span> <span class="m">1</span> <span class="m">100</span>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>bash<span class="w"> </span>preprocess.sh<span class="w"> </span><span class="m">1</span><span class="w"> </span>wdl_data<span class="w"> </span>pandas<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="m">100</span>
 </pre></div>
 </div>
 <p>Meanings of the command line arguments:</p>
@@ -435,7 +435,7 @@ div.rendered_html tbody tr:hover {
 <p>For more details about the data preprocessing, please refer to <a class="reference external" href="../samples/criteo#preprocess-the-dataset">Preprocess the Criteo Dataset</a>.</p>
 </li>
 <li><p>Create a soft link of the dataset folder to the path of this notebook using the following command:</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ ln -s <span class="si">${</span><span class="nv">project_root</span><span class="si">}</span>/tools/wdl_data <span class="si">${</span><span class="nv">project_root</span><span class="si">}</span>/notebooks/wdl_data
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>ln<span class="w"> </span>-s<span class="w"> </span><span class="si">${</span><span class="nv">project_root</span><span class="si">}</span>/tools/wdl_data<span class="w"> </span><span class="si">${</span><span class="nv">project_root</span><span class="si">}</span>/notebooks/wdl_data
 </pre></div>
 </div>
 </li>

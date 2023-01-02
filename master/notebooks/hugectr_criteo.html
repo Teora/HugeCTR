@@ -376,7 +376,7 @@ div.rendered_html tbody tr:hover {
     text-align: unset;
 }
 </style>
-<p><img alt="62018cc9d3fa4a9988dca54c750c7b54" src="http://developer.download.nvidia.com/compute/machine-learning/frameworks/nvidia_logo.png" /></p>
+<p><img alt="cb39ad1044c44c6d9ea36850456c2bb8" src="http://developer.download.nvidia.com/compute/machine-learning/frameworks/nvidia_logo.png" /></p>
 <div class="section" id="HugeCTR-Python-Interface">
 <h1>HugeCTR Python Interface<a class="headerlink" href="#HugeCTR-Python-Interface" title="Permalink to this headline"></a></h1>
 <div class="section" id="Overview">
@@ -415,7 +415,7 @@ div.rendered_html tbody tr:hover {
 <p>## 1. Installation</p>
 <p>### 1.1 Get HugeCTR from NGC The HugeCTR Python module is preinstalled in the <a class="reference external" href="https://ngc.nvidia.com/catalog/containers/nvidia:merlin:merlin-training">Merlin Training Container</a>: <code class="docutils literal notranslate"><span class="pre">nvcr.io/nvidia/merlin/merlin-training:22.04</span></code>.</p>
 <p>You can check the existence of required libraries by running the following Python code after launching this container.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ python3 -c <span class="s2">&quot;import hugectr&quot;</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>python3<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;import hugectr&quot;</span>
 </pre></div>
 </div>
 <p>### 1.2 Build HugeCTR from Source Code</p>
@@ -425,13 +425,13 @@ div.rendered_html tbody tr:hover {
 <p>In preprocessing, we will further reduce the amounts of data to speedup the preprocessing, fill missing values, remove the feature values whose occurrences are very rare, etc. Here we choose pandas preprocessing method to make the dataset ready for HugeCTR training.</p>
 <ol class="arabic" start="2">
 <li><p>Preprocessing by Pandas using the following command:</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ bash preprocess.sh <span class="m">1</span> dcn_data pandas <span class="m">1</span> <span class="m">0</span>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>bash<span class="w"> </span>preprocess.sh<span class="w"> </span><span class="m">1</span><span class="w"> </span>dcn_data<span class="w"> </span>pandas<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="m">0</span>
 </pre></div>
 </div>
 <p>The first argument represents the dataset postfix. It is 1 here since day_1 is used. The second argument dcn_data is where the preprocessed data is stored. The fourth arguement (one after pandas) 1 embodies that the normalization is applied to dense features. The last argument 0 means that the feature crossing is not applied.</p>
 </li>
 <li><p>Create a soft link to the dataset folder using the following command:</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ ln <span class="si">${</span><span class="nv">project</span><span class="p">-root</span><span class="si">}</span>/tools/dcn_data <span class="si">${</span><span class="nv">project_root</span><span class="si">}</span>/notebooks/dcn_data
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>ln<span class="w"> </span><span class="si">${</span><span class="nv">project</span><span class="p">-root</span><span class="si">}</span>/tools/dcn_data<span class="w"> </span><span class="si">${</span><span class="nv">project_root</span><span class="si">}</span>/notebooks/dcn_data
 </pre></div>
 </div>
 </li>
@@ -910,13 +910,13 @@ Writing dcn_inference.py
 <p>In preprocessing, we will further reduce the amounts of data to speedup the preprocessing, fill missing values, remove the feature values whose occurrences are very rare, etc. Here we choose pandas preprocessing method to make the dataset ready for HugeCTR training.</p>
 <ol class="arabic" start="2">
 <li><p>Preprocessing by Pandas using the following command:</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ bash preprocess.sh <span class="m">1</span> wdl_data pandas <span class="m">1</span> <span class="m">1</span> <span class="m">100</span>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>bash<span class="w"> </span>preprocess.sh<span class="w"> </span><span class="m">1</span><span class="w"> </span>wdl_data<span class="w"> </span>pandas<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="m">100</span>
 </pre></div>
 </div>
 <p>The first argument represents the dataset postfix. It is 1 here since day_1 is used. The second argument wdl_data is where the preprocessed data is stored. The fourth arguement (one after pandas) 1 embodies that the normalization is applied to dense features. The fifth argument 1 means that the feature crossing is applied. The last argument 100 means the number of data files in each file list.</p>
 </li>
 <li><p>Create a soft link to the dataset folder using the following command:</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ ln <span class="si">${</span><span class="nv">project_root</span><span class="si">}</span>/tools/wdl_data <span class="si">${</span><span class="nv">project_root</span><span class="si">}</span>/notebooks/wdl_data
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>ln<span class="w"> </span><span class="si">${</span><span class="nv">project_root</span><span class="si">}</span>/tools/wdl_data<span class="w"> </span><span class="si">${</span><span class="nv">project_root</span><span class="si">}</span>/notebooks/wdl_data
 </pre></div>
 </div>
 </li>

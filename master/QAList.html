@@ -225,20 +225,20 @@ There are 2 steps:</p>
 <div class="section" id="how-to-set-data-clauses-if-there-are-two-embeddings-needed">
 <h2>18. How to set data clauses, if there are two embeddings needed?<a class="headerlink" href="#how-to-set-data-clauses-if-there-are-two-embeddings-needed" title="Permalink to this headline"></a></h2>
 <p>There should only be one source where the “sparse” is an array. Suppose there are 26 features (slots), first 13 features belong to the first embedding and the last 13 features belong to the second embedding, you can have two elements in “sparse” array as below:</p>
-<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="nt">&quot;sparse&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
-<span class="p">{</span><span class="w"></span>
-<span class="w"> </span><span class="nt">&quot;top&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;data1&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w"> </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;DistributedSlot&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w"> </span><span class="nt">&quot;max_feature_num_per_sample&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">30</span><span class="p">,</span><span class="w"></span>
-<span class="w"> </span><span class="nt">&quot;slot_num&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">13</span><span class="w"></span>
-<span class="p">},</span><span class="w"></span>
-<span class="p">{</span><span class="w"></span>
-<span class="w"> </span><span class="nt">&quot;top&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;data2&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w"> </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;DistributedSlot&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w"> </span><span class="nt">&quot;max_feature_num_per_sample&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">30</span><span class="p">,</span><span class="w"></span>
-<span class="w"> </span><span class="nt">&quot;slot_num&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">13</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
-<span class="p">]</span><span class="w"></span>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="nt">&quot;sparse&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="p">{</span>
+<span class="w"> </span><span class="nt">&quot;top&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;data1&quot;</span><span class="p">,</span>
+<span class="w"> </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;DistributedSlot&quot;</span><span class="p">,</span>
+<span class="w"> </span><span class="nt">&quot;max_feature_num_per_sample&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">30</span><span class="p">,</span>
+<span class="w"> </span><span class="nt">&quot;slot_num&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">13</span>
+<span class="p">},</span>
+<span class="p">{</span>
+<span class="w"> </span><span class="nt">&quot;top&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;data2&quot;</span><span class="p">,</span>
+<span class="w"> </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;DistributedSlot&quot;</span><span class="p">,</span>
+<span class="w"> </span><span class="nt">&quot;max_feature_num_per_sample&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">30</span><span class="p">,</span>
+<span class="w"> </span><span class="nt">&quot;slot_num&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">13</span>
+<span class="p">}</span>
+<span class="p">]</span>
 </pre></div>
 </div>
 </div>
